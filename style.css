@@ -9,13 +9,13 @@ main {
 .container {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255,198,0);
+    background-color: rgb(247, 244, 236);
     width: 400px;
     height: 600px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
 }
 
 .title {
@@ -25,17 +25,18 @@ main {
     width: 100%;
     height: 50px;
     font: bold 2.5rem serif;
-    border-bottom: solid 5px black;
+    border-bottom: solid 5px rgb(209, 209, 209);
     margin-bottom: 20px;
 }
 
-.input {
+input {
     display: flex;
     width: 300px;
     height: 50px;
     border-radius: 5px;
     border: none;
     outline: 0;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.39);
     font: bold 1.5rem serif;
     text-align: center;
 }
@@ -49,10 +50,16 @@ button {
     height: 40px;
     font: bold 1.2rem serif;
     background-color: #000;
-    color: rgb(255,198,0);
+    color: #fff;
     outline: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: inset 0 0 10px black;
 }
 
 .result {
@@ -63,9 +70,9 @@ button {
     height: 150px;
     border-radius: 5px;
     font: italic 1.5rem serif;
-    box-shadow: 0px 0px 10px black;
-    background: #000;
-    color:  rgb(255,198,0);
+    box-shadow: inset 0px 0px 10px black;
+    background: #dfdddd;
+    color:  rgb(61, 61, 61);
     padding: 20px;
     box-sizing: border-box;
     user-select: none;
